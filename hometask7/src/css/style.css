@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@600;700&family=Inconsolata:wght@500&family=Poppins:ital,wght@0,100;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Inconsolata", monospace;
+  background-color: black;
+  color: #ffff;
+}
+
+.imgs {
+  max-width: 375px;
+  height: 275px;
+  display: inline-block;
+}
+.main {
+  border: 1px solid grey;
+  margin: 20px 70px 30px 70px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+.div2 {
+  display: inline-block;
+  max-width: 655px;
+  margin: 0 auto;
+}
+.div3{
+    display: inline-block;
+    max-width:504px;
+}
+h3 {
+  display: inline-block;
+}
+.a1{
+  text-decoration: none;
+  color: #7e93fb;
+}
+.a2{
+    text-decoration: none;
+    display: inline-block;
+    max-width: 102px;
+    text-align: right;
+}
+.mini_img{
+    max-width: 30px;
+    height: 30px;
+}
+button{
+    font-size: 20px;
+    background-color: #282a31;
+    max-width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    margin: 3px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}

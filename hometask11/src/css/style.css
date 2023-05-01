@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+}
+#navbar {
+  background-color: #000000;
+}
+.div_all .nav_item .company {
+  position: relative;
+}
+.div_all .nav_item .company .list_company {
+  color: white;
+  display: block;
+}
+.div_all .nav_item .company ul {
+  display: block;
+}
+#navbar .div_all {
+  display: flex;
+  align-items: center;
+  /* position: fixed; */
+  max-width: 1340px;
+  margin: 20px auto;
+}
+#navbar .div_all .updater {
+  max-width: 1340px;
+  display: flex;
+  background-color: #0000;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.div_all .nav_list ul li {
+  display: inline-block;
+  padding: 15px;
+}
+.div_all .nav_list ul li a {
+  color: #7e93fb;
+  text-decoration: none;
+}
+.div_all .nav_logo {
+  width: 90px;
+  height: 30px;
+}
+.div_all .nav_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.div_all .nav_login a {
+  color: #7e93fb;
+  text-decoration: none;
+  margin-right: 90px;
+}
+.div_all .nav_login button {
+  background-color: #4561ec;
+  color: white;
+  width: 125px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* section1 */
+#section1 .information1 {
+  max-width: 1340px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+#section1 .information1 .cards {
+  max-width: 1340px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+#section1 .information1 .cards .card button {
+  border: none;
+  border: 1px solid #4561ec;
+  background-color: #4561ec;
+  width: 100%;
+  padding: 8px;
+  color: #ffff;
+  margin-top: 0px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#section1 .information1 .cards .card button:hover {
+  background-color: #1b2a75;
+  border: none;
+  border: 1px solid #1b2a75;
+}
+#section1 .information1 .mini_information {
+  color: #ffff;
+  height: 100px;
+}
+#section1 .information1 .mini_information h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#section1 .information1 .mini_information .imgs {
+  width: 100px;
+  height: 50px;
+}
+#section1 .information1 .mini_information .imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  color: white;
+}
+#section1 .information1 .card {
+  margin-top: 30px;
+  border: 1px solid #4561ec;
+  width: 250px;
+  margin: 20px;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: normal; */
+  position: relative;
+}
+#section1 .information1 .card h2,
+#section1 .information1 .card h3,
+#section1 .information1 .card ul li {
+  color: #ffff;
+}
+#section1 .information1 .cards .card h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 25px;
+  line-height: 35px;
+  display: inline-block;
+}
+#section1 .information1 .cards .card h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 8px;
+  background-color: #4561ec;
+  transition: 0.3s ease-in-out;
+}
+#section1 .information1 .cards .card h2:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #4561ec;
+}
+#section1 .information1 .card h3 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#section1 .information1 .card ul {
+  margin-left: 15px;
+}
+#section1 .information1 .card ul li {
+  list-style: none;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+#section1 .information1 .card ul li::before {
+  content: "\2022";
+  color: #4561ec;
+  font-size: 29px;
+}
+/* #section1 .information1 .cards .card .button1 {
+  margin-top: 292px;
+}
+#section1 .information1 .cards .card .button2 {
+  margin-top: 170px;
+} */
