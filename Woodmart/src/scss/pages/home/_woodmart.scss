@@ -1,0 +1,420 @@
+@use "../../utils/variables" as *;
+@use "../../utils/mixin" as *;
+@use "../../utils/extend" as *;
+#banner_site {
+  font-family: $default_font_family;
+  margin-top: 30px;
+  .container {
+    .row {
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      @include flexible(center, center, $gap: 20px);
+      .img1 {
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 575px;
+          height: 575px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          transition: 0.4s ease-in-out all;
+        }
+        .information {
+          position: absolute;
+          top: 0;
+          display: flex;
+          @include flexible($justify: center, $align: start, $direct: column);
+          height: 300px;
+          margin-left: 30px;
+          gap: 10px;
+          .modern {
+            font-size: 35px;
+            font-weight: 400;
+          }
+          .chair {
+            font-size: 35px;
+          }
+          p {
+            width: 250px;
+            color: $grey_color_ton2;
+            font-size: 14px;
+          }
+          h3 {
+            font-size: 22px;
+            font-weight: 400;
+            color: $secondary_color;
+          }
+        }
+      }
+      .img1:hover img {
+        transform: scale(1.1);
+      }
+      .imgs {
+        .img2 {
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          img {
+            width: 277px;
+            height: 277px;
+            @include background(no-repeat, cover, center);
+            transition: 0.4s ease-in-out all;
+          }
+          .information {
+            position: absolute;
+            top: 0;
+            display: flex;
+            margin-left: 30px;
+            @include flexible(center, start, column);
+            height: 200px;
+            .wool {
+              font-weight: 400;
+            }
+            .scarves {
+              font-weight: 600;
+            }
+            a {
+              text-decoration: none;
+              color: $third_color;
+              margin-top: 15px;
+              font-weight: 500;
+              border-bottom: 2px solid $secondary_color;
+              font-size: 15px;
+            }
+          }
+        }
+        .img2:hover img {
+          transform: scale(1.1);
+        }
+        .image {
+          margin-bottom: 20px;
+        }
+      }
+      .img3 {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        img {
+          width: 277px;
+          height: 574px;
+          @include background(no-repeat, cover, center);
+          transition: 0.4s ease-in-out all;
+        }
+        .information {
+          position: absolute;
+          display: flex;
+          @include flexible(center, start, column);
+          height: 250px;
+          margin-left: 30px;
+          gap: 10px;
+          top: 0px;
+          .modern {
+            font-size: 35px;
+            font-weight: 400;
+          }
+          .chair {
+            font-size: 35px;
+          }
+          p {
+            width: 250px;
+            color: $grey_color_ton2;
+            font-size: 14px;
+          }
+          h3 {
+            font-size: 22px;
+            font-weight: 400;
+            color: $secondary_color;
+          }
+        }
+      }
+      .img3:hover img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+#things {
+  margin-top: 50px;
+  font-family: $default_font_family;
+  .container {
+    .row {
+      @include flexible(center, center, $row-gap: 15px);
+      .card {
+        position: relative;
+        width: 300px;
+        height: 171px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 20px, 0;
+        @include background(no-repeat, contain, (20px, 0));
+        background-color: $primary_color;
+      }
+      .information {
+        position: absolute;
+        top: 10px;
+        right: 70px;
+        .main_ul {
+          li {
+            color: $third_color;
+            list-style-type: none;
+            line-height: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            a {
+              text-decoration: none;
+              color: $third_color;
+            }
+            .child_ul {
+              li {
+                color: $third_color;
+                list-style-type: none;
+                line-height: 30px;
+                font-size: 13px;
+                font-weight: 400;
+                a {
+                  text-decoration: none;
+                  color: $third_color;
+                  transition: 0.2s ease-in-out all;
+                }
+              }
+              li:hover a {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+      .information1 {
+        @extend %information;
+        right: 30px !important;
+      }
+      .information2 {
+        @extend %information;
+        right: 0px !important;
+      }
+    }
+  }
+}
+
+#best_of_week {
+  font-family: $default_font_family;
+  margin-top: 50px;
+  .container {
+    .row {
+      @include flexible(space-evenly, start, row-reverse);
+      .side_images {
+        .bedroom,
+        .chairs {
+          position: relative;
+          margin-bottom: 30px;
+          .img {
+            width: 270px;
+            height: 381px;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: 0.4s ease-in-out all;
+            }
+          }
+          .information {
+            position: absolute;
+            top: 130px;
+            left: 50px;
+            text-align: center;
+            h3,
+            h1,
+            p {
+              color: $primary_color;
+            }
+          }
+        }
+        .bedroom:hover img {
+          transform: scale(1.1);
+        }
+        .chairs:hover img {
+          transform: scale(1.1);
+        }
+      }
+      .center_images {
+        width: 900px;
+        ul {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          column-gap: 25px;
+          margin-bottom: 20px;
+          margin-left: 25px;
+          border-bottom: 2px solid $secondary_color_dark;
+          padding-bottom: 5px;
+          li {
+            list-style-type: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: $grey_color_ton2;
+          }
+          .best {
+            font-size: 25px !important;
+            font-weight: 700 !important;
+            color: $third_color !important;
+          }
+          .featured {
+            color: $secondary_color_dark !important;
+          }
+        }
+        .cards {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+          .card {
+            position: relative;
+            z-index: 999;
+            .img {
+              width: 271px;
+              height: 271px;
+              transition: 0.2s ease-in-out all;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .information {
+              margin-top: 5px;
+              text-align: center;
+              line-height: 25px;
+              .p_1 {
+                color: $third_color;
+                font-size: 13px;
+                z-index: 999;
+                background-color: $primary_color;
+              }
+              .p_2 {
+                color: $grey_color_ton2;
+                font-size: 13px;
+                background-color: $primary_color;
+              }
+              h4 {
+                color: $secondary_color;
+                transition: 0.2s ease-in-out all;
+                transform-style: preserve-3d;
+                transform: translateZ(14px);
+              }
+            }
+            .percent_price {
+              position: absolute;
+              top: 14px;
+              left: 0px;
+              background-color: $secondary_color;
+              color: $primary_color;
+              font-size: 12px;
+              padding: 4px 10px;
+            }
+            .card_hover {
+              position: absolute;
+              background: $primary_color;
+              padding: 10px;
+              top: 3px;
+              left: 0px;
+              width: 270px;
+              height: 460px;
+              z-index: -1;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              transition: 0.2s ease-in-out all;
+              opacity: 0;
+              visibility: hidden;
+              .information {
+                height: 438px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
+                row-gap: 15px;
+                p {
+                  font-size: 11px;
+                  color: $grey_color_ton2;
+                  line-height: 15px;
+                }
+                .button {
+                  display: flex;
+                  gap: 35px;
+                  justify-content: center;
+                  align-items: center;
+                  i {
+                    cursor: pointer;
+                  }
+                  .btn {
+                    position: relative;
+                    width: 110px;
+                    height: 30px;
+                    transform-style: preserve-3d;
+                    transition: 0.2s ease-in-out all;
+                    .side {
+                      position: absolute;
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    }
+                    .default_side,
+                    .hover_side {
+                      background-color: $secondary_color;
+                      color: $primary_color;
+                      border: 1px solid $secondary_color;
+                      cursor: pointer;
+                    }
+                    .default_side {
+                      font-size: 13px;
+                      transform: translateZ(14px);
+                    }
+                    .hover_side {
+                      transform: rotateX(-90deg) translateZ(14px);
+                    }
+                  }
+                  .btn:hover {
+                    transform: rotateX(90deg);
+                  }
+                }
+              }
+            }
+          }
+          .card:hover .card_hover {
+            transform: scale(1.1);
+            opacity: 1;
+            visibility: visible;
+          }
+          .card:hover .img {
+            transform: translate(0, -10px);
+          }
+          .bottom_card {
+            z-index: 1;
+          }
+          // .card:hover .information h4 {
+          //   transform: rotateX(90deg);
+          //   opacity: 0;
+          //   visibility: hidden;
+          // }
+        }
+      }
+    }
+  }
+}
+#new_arrivals {
+  margin: 70px 0px;
+  @extend %new_arrivals;
+  background-color: #f6f6f6;
+  padding: 50px 0px;
+  font-family: $default_font_family;
+  .container {
+    .row {
+      flex-direction: row;
+    }
+  }
+}

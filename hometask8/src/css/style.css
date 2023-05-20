@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@600;700&family=Inconsolata:wght@500&family=Poppins:ital,wght@0,100;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .section1 .div1 img{
+    width: 100px;
+    height: 100px;
+} */
+.cards1 .h1_1,
+.cards1 .h4_1 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+.cards1 .h1_1 {
+  color: #2b231d;
+  font-size: 40px;
+  font-weight: 600;
+  width: 300px;
+}
+.cards1 .h4_1 {
+  font-size: 16px;
+  color: #312e29;
+  width: 450px;
+}
+.cards1 {
+  background-image: url(https://coffo.b-cdn.net/wp-content/uploads/2022/11/6uj6j6u.png);
+  text-align: center;
+}
+.card_items {
+  width: 250px;
+  margin: 0 auto;
+  border: none;
+  border: 1px solid none;
+  text-align: center;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgb(239 239 239);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: box-shadow 0.5s;
+}
+.card_items:hover {
+  box-shadow: 0px 0px 0px 0px;
+}
+.card_items .image1 img {
+  width: 40%;
+}
+.card_items .image2 img {
+  width: 51%;
+}
+.card_items .image3 img {
+  width: 37%;
+}
+.card_items .image4 img {
+  width: 33%;
+}
+.card_items img {
+  padding: 10px;
+}
+.cards2 {
+  margin-top: 100px;
+  background-color: white;
+}
+.card_items2 {
+  width: 100%;
+  text-align: center;
+}
+.card_items2 .imgs img {
+  width: 375px;
+  height: 375px;
+}
+.card_items2 .imgs1,
+.card_items2 .imgs2 {
+  display: inline-block;
+}
+.imgs {
+  overflow: hidden;
+  display: inline-block;
+}
+.imgs img {
+  padding: 5px;
+  display: inline-block;
+  transition: transform 0.2s;
+  width: 250px;
+  height: 250px;
+  border: none;
+  overflow: hidden;
+}
+.imgs img:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+/* new hometask with mini bar */
+
+.cards2 .imgs1 .imgs,
+.cards2 .imgs2 .imgs {
+  position: relative;
+}
+.cards2 .imgs1 .imgs .mini_bar,
+.cards2 .imgs2 .imgs .mini_bar {
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: none;
+}
+.cards2 .imgs1 .imgs .mini_bar:hover,
+.cards2 .imgs2 .imgs .mini_bar:hover {
+  color: red;
+}
+

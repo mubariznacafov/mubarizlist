@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+.all {
+  background: linear-gradient(
+    to left,
+    rgb(43, 43, 233) 0%,
+    rgb(43, 43, 233) 50%,
+    white 50%,
+    white 100%
+  );
+  border: none;
+  border-radius: 10px;
+  width: 925px;
+  height: 700px;
+  margin: 0 auto;
+  align-items: center;
+}
+.register_form .div1,
+.div2,
+.div3,
+.div4 {
+  display: table-cell;
+}
+.h2_1 {
+  color: rgb(43, 43, 233);
+  margin-left: 20px;
+  display: inline-block;
+}
+.h2_2 {
+  color: white;
+  display: inline-block;
+  margin-left: 220px;
+}
+h4 {
+  display: inline-block;
+  color: white;
+}
+.divmain {
+  display: inline-block;
+}
+.divforpart {
+  display: flex;
+}
+.span2 {
+  margin-left: 10px;
+}
+input,
+select {
+  margin: 15px;
+  padding: 18px;
+}
+input,
+select {
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.rightinputs {
+  background-color: rgb(43, 43, 233);
+}
+label {
+  text-align: left;
+}
+input.rightinputs::placeholder {
+  color: white;
+}
+input.leftinputs::placeholder {
+  color: black;
+}
+button {
+  display: block;
+  margin-left: 20px;
+  background-color: white;
+  width: 150px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 20px;
+}
+.title,
+.position,
+.country {
+  width: 429px;
+}
+.company,
+.street,
+.additional,
+.email {
+  width: 390px;
+}
+/* inputun ic textinin coloru */
+.rightinputs,
+textarea {
+  color: white;
+}
+.buisnessarea {
+  width: 220px;
+}
+.employees {
+  width: 140px;
+}
+.zipcode,
+.code {
+  width: 100px;
+}
+.phonenumber {
+  width: 224px;
+}
+.place {
+  width: 262px;
+}
